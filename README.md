@@ -5,9 +5,19 @@
 Once.ts is a micro-library that enables you to enforce a function can only be executed once. Once.js completely dependency-free and written in Typescript for AMD, Node.js and the Web. 
 This is a typescript version of [once.js](https://github.com/daniellmb/once.js/) library.
 
-## Examples
+## Import
 
-### TypeScript
+#### Node.js
+```
+const {once} = require("once.ts");
+```
+
+#### Browser
+```
+import {once} from "once";
+```
+
+## Usage
 
 ```TypeScript
 let foo = once(()=> console.log("Hello World!"));
